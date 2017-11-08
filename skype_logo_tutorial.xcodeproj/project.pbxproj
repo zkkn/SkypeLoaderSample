@@ -8,9 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		86A601566061A6A544C8038C /* Pods_skype_logo_tutorial.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C15E230F10F37BB67CE6EDBB /* Pods_skype_logo_tutorial.framework */; };
+		C7C45B711FB3116800C8DB3C /* WorkSpace.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7C45B701FB3116800C8DB3C /* WorkSpace.swift */; };
 		C7E8D3C41FB3102100FD8DBF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7E8D3C31FB3102100FD8DBF /* AppDelegate.swift */; };
 		C7E8D3C61FB3102100FD8DBF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7E8D3C51FB3102100FD8DBF /* ViewController.swift */; };
-		C7E8D3C91FB3102100FD8DBF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7E8D3C71FB3102100FD8DBF /* Main.storyboard */; };
 		C7E8D3CB1FB3102100FD8DBF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7E8D3CA1FB3102100FD8DBF /* Assets.xcassets */; };
 		C7E8D3CE1FB3102100FD8DBF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7E8D3CC1FB3102100FD8DBF /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -19,10 +19,10 @@
 		1899CECB6FAD976F814B1BC2 /* Pods-skype_logo_tutorial.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-skype_logo_tutorial.release.xcconfig"; path = "Pods/Target Support Files/Pods-skype_logo_tutorial/Pods-skype_logo_tutorial.release.xcconfig"; sourceTree = "<group>"; };
 		5E4D36C73D74CC34452998AF /* Pods-skype_logo_tutorial.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-skype_logo_tutorial.debug.xcconfig"; path = "Pods/Target Support Files/Pods-skype_logo_tutorial/Pods-skype_logo_tutorial.debug.xcconfig"; sourceTree = "<group>"; };
 		C15E230F10F37BB67CE6EDBB /* Pods_skype_logo_tutorial.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_skype_logo_tutorial.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C7C45B701FB3116800C8DB3C /* WorkSpace.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkSpace.swift; sourceTree = "<group>"; };
 		C7E8D3C01FB3102100FD8DBF /* skype_logo_tutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = skype_logo_tutorial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7E8D3C31FB3102100FD8DBF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C7E8D3C51FB3102100FD8DBF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		C7E8D3C81FB3102100FD8DBF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C7E8D3CA1FB3102100FD8DBF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C7E8D3CD1FB3102100FD8DBF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C7E8D3CF1FB3102100FD8DBF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -80,10 +80,10 @@
 			children = (
 				C7E8D3C31FB3102100FD8DBF /* AppDelegate.swift */,
 				C7E8D3C51FB3102100FD8DBF /* ViewController.swift */,
-				C7E8D3C71FB3102100FD8DBF /* Main.storyboard */,
 				C7E8D3CA1FB3102100FD8DBF /* Assets.xcassets */,
 				C7E8D3CC1FB3102100FD8DBF /* LaunchScreen.storyboard */,
 				C7E8D3CF1FB3102100FD8DBF /* Info.plist */,
+				C7C45B701FB3116800C8DB3C /* WorkSpace.swift */,
 			);
 			path = skype_logo_tutorial;
 			sourceTree = "<group>";
@@ -153,7 +153,6 @@
 			files = (
 				C7E8D3CE1FB3102100FD8DBF /* LaunchScreen.storyboard in Resources */,
 				C7E8D3CB1FB3102100FD8DBF /* Assets.xcassets in Resources */,
-				C7E8D3C91FB3102100FD8DBF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -220,20 +219,13 @@
 			files = (
 				C7E8D3C61FB3102100FD8DBF /* ViewController.swift in Sources */,
 				C7E8D3C41FB3102100FD8DBF /* AppDelegate.swift in Sources */,
+				C7C45B711FB3116800C8DB3C /* WorkSpace.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		C7E8D3C71FB3102100FD8DBF /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C7E8D3C81FB3102100FD8DBF /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		C7E8D3CC1FB3102100FD8DBF /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -383,6 +375,7 @@
 				C7E8D3D41FB3102100FD8DBF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
