@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		86A601566061A6A544C8038C /* Pods_skype_logo_tutorial.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C15E230F10F37BB67CE6EDBB /* Pods_skype_logo_tutorial.framework */; };
 		C7E8D3C41FB3102100FD8DBF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7E8D3C31FB3102100FD8DBF /* AppDelegate.swift */; };
 		C7E8D3C61FB3102100FD8DBF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7E8D3C51FB3102100FD8DBF /* ViewController.swift */; };
 		C7E8D3C91FB3102100FD8DBF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7E8D3C71FB3102100FD8DBF /* Main.storyboard */; };
@@ -15,6 +16,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1899CECB6FAD976F814B1BC2 /* Pods-skype_logo_tutorial.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-skype_logo_tutorial.release.xcconfig"; path = "Pods/Target Support Files/Pods-skype_logo_tutorial/Pods-skype_logo_tutorial.release.xcconfig"; sourceTree = "<group>"; };
+		5E4D36C73D74CC34452998AF /* Pods-skype_logo_tutorial.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-skype_logo_tutorial.debug.xcconfig"; path = "Pods/Target Support Files/Pods-skype_logo_tutorial/Pods-skype_logo_tutorial.debug.xcconfig"; sourceTree = "<group>"; };
+		C15E230F10F37BB67CE6EDBB /* Pods_skype_logo_tutorial.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_skype_logo_tutorial.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7E8D3C01FB3102100FD8DBF /* skype_logo_tutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = skype_logo_tutorial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7E8D3C31FB3102100FD8DBF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C7E8D3C51FB3102100FD8DBF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -29,17 +33,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				86A601566061A6A544C8038C /* Pods_skype_logo_tutorial.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3AAAB70E2B7A62446E8238FF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C15E230F10F37BB67CE6EDBB /* Pods_skype_logo_tutorial.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		70C003195A227AC9E75E0051 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5E4D36C73D74CC34452998AF /* Pods-skype_logo_tutorial.debug.xcconfig */,
+				1899CECB6FAD976F814B1BC2 /* Pods-skype_logo_tutorial.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		C7E8D3B71FB3102100FD8DBF = {
 			isa = PBXGroup;
 			children = (
 				C7E8D3C21FB3102100FD8DBF /* skype_logo_tutorial */,
 				C7E8D3C11FB3102100FD8DBF /* Products */,
+				70C003195A227AC9E75E0051 /* Pods */,
+				3AAAB70E2B7A62446E8238FF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C7E8D3D21FB3102100FD8DBF /* Build configuration list for PBXNativeTarget "skype_logo_tutorial" */;
 			buildPhases = (
+				9B389468E20B7B95479C8854 /* [CP] Check Pods Manifest.lock */,
 				C7E8D3BC1FB3102100FD8DBF /* Sources */,
 				C7E8D3BD1FB3102100FD8DBF /* Frameworks */,
 				C7E8D3BE1FB3102100FD8DBF /* Resources */,
+				43FD15F1B7AED22C110E24DE /* [CP] Embed Pods Frameworks */,
+				D8F2CB1E65FDB06F1ABE0536 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -131,6 +158,60 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		43FD15F1B7AED22C110E24DE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-skype_logo_tutorial/Pods-skype_logo_tutorial-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/C4/C4.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/C4.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-skype_logo_tutorial/Pods-skype_logo_tutorial-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9B389468E20B7B95479C8854 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-skype_logo_tutorial-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D8F2CB1E65FDB06F1ABE0536 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-skype_logo_tutorial/Pods-skype_logo_tutorial-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C7E8D3BC1FB3102100FD8DBF /* Sources */ = {
@@ -257,6 +338,7 @@
 		};
 		C7E8D3D31FB3102100FD8DBF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5E4D36C73D74CC34452998AF /* Pods-skype_logo_tutorial.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 4HAR89FJ3K;
@@ -270,6 +352,7 @@
 		};
 		C7E8D3D41FB3102100FD8DBF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1899CECB6FAD976F814B1BC2 /* Pods-skype_logo_tutorial.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 4HAR89FJ3K;
